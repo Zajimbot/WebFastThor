@@ -1,0 +1,198 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: #101322;
+}
+
+.header-div p {
+    color: #FFF;
+    font-size: 24px;
+    background-color: #2C3047;
+}
+
+.header-img {
+    background-color: #2C3047;
+}
+
+.header-Magnidier-logo {
+    display: flex;
+    padding-left: 25px;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2C3047;
+    gap: 86px;
+}
+
+.header-div div {
+    display: flex;
+    align-items: center;
+    background-color: #2C3047;
+    gap: 24px;
+}
+
+.header-div div p {
+    white-space: pre;
+}
+
+.header-menu-icon {
+    background-color: #2C3047;
+    margin-left: 360px;
+}
+
+.header-input {
+    background-color: #545361;
+    color: #ffffff;
+    border-color: #FFF;
+    border-width: 2px;
+    border-radius: 16px;
+    height: 64px;
+    font-size: 20px;
+
+    padding-left: 50px;
+    background-image: url(../icons/Magnifier.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+
+    width: 100%;
+    max-width: 912px;
+}
+
+/* фильтр */
+.filter-div {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.filter-div button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2C3047;
+    border-radius: 16px;
+    margin: 24px 0px 0px 24px;
+    padding-left: 24px;
+    color: white;
+    height: 72px;
+    width: 100%;
+    max-width: 216px;
+    position: relative; 
+}
+
+.filter-div button p{
+    background-color: #2C3047;
+}
+
+.filter-div button img {
+    background-color: #2C3047;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.filter-div button div {
+    background-color: #2C3047;
+    color: white;
+    font-size: 24px;
+    text-align: center; 
+}
+
+/* карточки */
+
+.grop-card-main
+{
+    display: grid;
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 50% 50%;
+    gap: 32px 0px;
+    margin-left: 270px;   
+    margin-right: 192px;
+}
+
+.card-div
+{
+    display: flex;
+    flex-direction: column;   
+    background-color: #2C3047;
+    gap: 24px;
+    width: 288px;
+    height: 505px;
+    border-radius: 16px;
+}
+
+.card-div-img{
+
+    width: 240px;
+    height: 120px;
+    margin: 24px 0px 0px 24px ;
+}
+
+.card-div p
+{
+    color: #fff;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    font-size: 20px;
+    background-color: #343434;
+}
+
+.card-name-p{
+    margin-left: -24px;
+}
+
+.card-div-content
+{
+    background-color: #343434;
+    border-radius: 16px ;
+    padding-top: 12px;
+    padding-left: 24px;
+}
+
+.card-div-content div{
+    display: flex; 
+    align-items: center; 
+}
+
+.card-div-content div img{
+    background-color: #343434;
+    width: 48px;
+    height: 48px;
+}
+
+.card-div-content-block p{
+    width: 150px;
+    margin-top: 24px;
+}
+
+.card-div-content-block
+{
+    background-color: #343434;
+    border-radius: 16px;
+    padding-bottom: 6px;
+}
+
+/* подвал */
+
+.footer
+{
+    margin-top: 136px;
+}
+
+.footer div
+{
+}
+
+.footer div p
+{
+    display: flex;
+    justify-content: center;
+    background-color: #2C3047;
+    color: #FFF;
+}
