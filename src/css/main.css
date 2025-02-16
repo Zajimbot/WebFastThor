@@ -1,18 +1,33 @@
+@import url('./var.css');
+
 *{
     padding: 0px;
     margin: 0px;
     border: none;
-    background-color: #101322;
+    background-color: var(--background);
+}
+
+header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-div p {
-    color: #FFF;
+    color: var(--white);
     font-size: 24px;
-    background-color: #2C3047;
+    background-color: var(--element-color);
+}
+
+.header-div a{
+    text-decoration: none;
+    border-radius: var(--border-radius);
 }
 
 .header-img {
-    background-color: #2C3047;
+    background: transparent ;
 }
 
 .header-Magnidier-logo {
@@ -25,32 +40,44 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #2C3047;
+    background-color: var(--element-color);
     gap: 86px;
 }
 
 .header-div div {
     display: flex;
     align-items: center;
-    background-color: #2C3047;
+    background-color: var(--element-color);
     gap: 24px;
+}
+
+.header-div div:hover
+{
+    background-color: var(--hover-color);
+    border-radius: var(--border-radius);
 }
 
 .header-div div p {
     white-space: pre;
+    background: transparent ;
 }
 
 .header-menu-icon {
-    background-color: #2C3047;
+    background-color: var(--element-color);
     margin-left: 360px;
+    border-radius: var(--border-radius);
+}
+
+.header-menu-icon:hover{
+    background-color: var(--hover-color);
 }
 
 .header-input {
-    background-color: #545361;
-    color: #ffffff;
-    border-color: #FFF;
+    background-color: var(--input-background);
+    color: var(--white);
+    border-color: var(--white);
     border-width: 2px;
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     height: 64px;
     font-size: 20px;
 
@@ -74,31 +101,37 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #2C3047;
+    background-color: var(--element-color);
     border-radius: 16px;
-    margin: 24px 0px 0px 24px;
+    margin: 160px 0px 0px 24px;
     padding-left: 24px;
-    color: white;
+    color: var(--white);
     height: 72px;
     width: 100%;
     max-width: 216px;
     position: relative; 
 }
 
+.filter-div button:hover
+{
+    background-color: var(--hover-color);
+}
+
 .filter-div button p{
-    background-color: #2C3047;
+    background: transparent ;
+    font-size: 20px;
 }
 
 .filter-div button img {
-    background-color: #2C3047;
+    background: transparent ;
     width: 24px;
     height: 24px;
     margin-right: 24px;
 }
 
 .filter-div button div {
-    background-color: #2C3047;
-    color: white;
+    background-color: var(--element-color);
+    color:var(--white);
     font-size: 24px;
     text-align: center; 
 }
@@ -108,23 +141,30 @@
 .grop-card-main
 {
     display: grid;
-    display: grid;
-     grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 50% 50%;
-    gap: 32px 0px;
     margin-left: 270px;   
     margin-right: 192px;
+    gap: 32px 0px;
 }
 
 .card-div
 {
     display: flex;
     flex-direction: column;   
-    background-color: #2C3047;
+    background-color: var(--element-color);
     gap: 24px;
     width: 288px;
     height: 505px;
     border-radius: 16px;
+    
+}
+
+.card-div:hover
+{
+    border: var(--white) solid;
+    border-width: 1px;
+    margin: -1px;
 }
 
 .card-div-img{
@@ -136,11 +176,11 @@
 
 .card-div p
 {
-    color: #fff;
+    color: var(--white);
     padding-left: 24px;
     padding-bottom: 24px;
     font-size: 20px;
-    background-color: #343434;
+    background-color:  var(--card-black-color);
 }
 
 .card-name-p{
@@ -149,8 +189,8 @@
 
 .card-div-content
 {
-    background-color: #343434;
-    border-radius: 16px ;
+    background-color: var(--card-black-color);
+    border-radius: var(--border-radius);
     padding-top: 12px;
     padding-left: 24px;
 }
@@ -161,7 +201,7 @@
 }
 
 .card-div-content div img{
-    background-color: #343434;
+    background-color: var(--card-black-color);
     width: 48px;
     height: 48px;
 }
@@ -173,8 +213,8 @@
 
 .card-div-content-block
 {
-    background-color: #343434;
-    border-radius: 16px;
+    background-color: var(--card-black-color);
+    border-radius: var(--border-radius);
     padding-bottom: 6px;
 }
 
@@ -185,14 +225,22 @@
     margin-top: 136px;
 }
 
+
 .footer div
 {
+    display: flex;
+    gap: 128px;
+    padding: 24px;
+    background-color: var(--element-color);
+    color: var(--white);
 }
 
-.footer div p
-{
-    display: flex;
-    justify-content: center;
-    background-color: #2C3047;
-    color: #FFF;
+.footer div a{
+    background: transparent;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer div p{
+    background: transparent;
 }
