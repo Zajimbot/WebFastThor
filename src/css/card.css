@@ -1,0 +1,197 @@
+@import url('./var.css');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: var(--background);
+}
+
+body
+{
+    display: block;
+}
+
+header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0px;
+}
+
+.header-div a{
+    text-decoration: none;
+    border-radius: var(--border-radius);
+}
+
+.header-img {
+    background: transparent ;
+}
+
+.header-Magnidier-logo {
+    display: flex;
+    padding-left: 25px;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--element-color);
+    gap: 86px;
+}
+
+.header-div div {
+    display: flex;
+    align-items: center;
+    background-color: var(--element-color);
+    gap: 24px;
+}
+
+.header-div div:hover
+{
+    background-color: var(--hover-color);
+    border-radius: var(--border-radius);
+}
+
+.header-div div p {
+    white-space: pre;
+    background: transparent ; 
+    color: var(--white);
+    font-size: 24px;
+}
+
+.header-menu-icon {
+    background-color: var(--element-color);
+    margin-left: 360px;
+    border-radius: var(--border-radius);
+}
+
+.header-menu-icon:hover{
+    background-color: var(--hover-color);
+}
+
+.header-profile{
+    letter-spacing: 8px;
+    font-size: 48px; 
+    color: var(--white);
+    background-color: var(--element-color);
+}
+
+/* main */
+
+.main-card-div{
+    display: inline flex;
+    margin-top: 174px;
+    justify-content: center;
+    margin-left: 124px;
+    margin-right: 124px;
+    background-color: var(--user-card-back);
+    border-radius: var(--border-radius);
+}
+
+p{
+    color: var(--white);
+    background-color: transparent;
+}
+
+h1{
+    color: var(--white);
+    font-size: 36px;
+    font-weight: normal;
+    background-color: transparent;
+    margin-bottom: 12px;
+}
+
+.card-div-content-block p{
+    width: 224px;
+    margin-top: 24px;
+}
+
+.card-div-content-block
+{
+    border-radius: var(--border-radius);
+    background-color: var(--user-card-back);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.card-div-content-block p {
+    margin: 0; 
+    font-size: 20px;
+}
+
+.main-img{
+    width: 1176px;
+    height: 730px;
+    margin-top: 48px;
+    margin-left: 48px;
+    margin-bottom: 48px;
+    border-radius: var(--border-radius);
+}
+
+.main-card-div-text{
+
+   background-color: var(--user-card-back);
+    border-radius: var(--border-radius);
+    margin: 48px 24px 48px; 
+}
+
+.main-card-div-text img
+{
+    background-color: transparent;
+    margin-right: 24px;
+}
+
+.main-info{
+    font-size: 24px;
+    margin-top: 24px;
+    width: 300px;
+}
+
+.button-card {
+    background-color: var(--element-color);
+    color: var(--white);
+    padding: 12px;
+    margin-top: 24px;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    border: 1px solid transparent; /* Прозрачная обводка по умолчанию */
+    transition: border-color 0.3s ease; /* Плавный переход для обводки */
+}
+
+.button-card:hover {
+    border: 1px solid var(--white); /* Белая обводка при наведении */
+}
+
+/* подвал */
+
+.footer
+{
+    margin-top: 136px;
+}
+
+
+.footer div
+{
+    display: flex;
+    gap: 128px;
+    padding: 24px;
+    background-color: var(--element-color);
+    color: var(--white);
+}
+
+.footer div a{
+    background: transparent;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer div p{
+    background: transparent;
+}
