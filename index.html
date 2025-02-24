@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <title>FastTour</title>
     <link rel="stylesheet" href="./src/css/var.css">
+    <link rel="stylesheet" href="./src/css/right-menu.css">
+    <script src="./src/js/menu.js"></script>
 </head>
 <body >
     <header class="">
@@ -19,7 +21,7 @@
                 </div>
             </a>
             <input class="header-input" value placeholder="Поиск турниров"></input>
-            <img src="./src/icons/Menu.svg" alt="Иконка отсутствует" class="header-menu-icon" onclick="window.location.href='./profile.html';" >
+            <img src="./src/icons/Menu.svg" alt="Иконка отсутствует" class="header-menu-icon" onclick="toggleMenu()" >
         </div>  
     </header>
     <!-- Фильтр -->
@@ -134,6 +136,39 @@
         </div>
  
      </footer>
-    
+<nav class="right-menu">
+        <ul class="right-menu-ul">
+            <li data-icon="profile.svg" onclick="window.location.href='./profile.html';">Профиль</li>
+            <li data-icon="home.svg" onclick="window.location.href='./index.html';">Домой</li>
+            <li data-icon="settings.svg">Настройки</li>
+            <li data-icon="notes.svg">Мои записи</li>
+            <li data-icon="award.svg">Мои победы</li>
+            <li data-icon="publish.svg">Разместить</li>
+        </ul>
+    </nav>   
+    <!-- Фильтр с лева -->
+     <!-- <div class="filter-left-menu">
+        <div>
+            <input type="checkbox" class="left-menu-check">
+            <p>Турниры с призовым фондом</p>
+        </div>
+        <div>
+            <img src="./src/icons/mani.svg" alt="">
+            <input class="input-right0menu">
+        </div>
+        <div>
+            <img src="./src/icons/Location.svg" alt="">
+            <select name="location" >
+                <option value="first">Первый адресс</option>
+                <option value="">Второй адресс</option>
+                <option value="">Третий</option>
+            </select>
+        </div>
+        <div>
+            <img src="./src/icons/Data.svg" alt="">
+            <input type="text" class="date-input">
+            <input type="text" class="date-input">
+        </div>
+     </div> -->
 </body>
 </html>

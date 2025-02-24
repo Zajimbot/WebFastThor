@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/card.css">
+    <link rel="stylesheet" href="./src/css/right-menu.css">
+    <script src="./src/js/menu.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +20,7 @@
             </div>
             </a>
             <p class="header-profile">Турнир</p>
-            <img src="./src/icons/Menu.svg" alt="Иконка отсутствует" class="header-menu-icon">
+            <img src="./src/icons/Menu.svg" alt="Иконка отсутствует" class="header-menu-icon" onclick="toggleMenu()" >
         </div>  
     </header>
     <main>
@@ -67,5 +69,15 @@
         </div>
  
      </footer>
+<nav class="right-menu">
+        <ul class="right-menu-ul">
+            <li data-icon="profile.svg" onclick="window.location.href='./profile.html';">Профиль</li>
+            <li data-icon="home.svg" onclick="window.location.href='./index.html';">Домой</li>
+            <li data-icon="settings.svg">Настройки</li>
+            <li data-icon="notes.svg">Мои записи</li>
+            <li data-icon="award.svg">Мои победы</li>
+            <li data-icon="publish.svg">Разместить</li>
+        </ul>
+    </nav>
 </body>
 </html>

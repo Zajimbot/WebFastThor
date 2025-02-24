@@ -1,0 +1,82 @@
+/* Правое меню */
+
+.right-menu {
+   width: 320px;
+    min-width: 320px;
+    height: 100%;
+    top: 126px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--element-color);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000; 
+}
+
+.right-menu-ul {
+    background-color: var(--element-color);
+}
+
+.right-menu-ul li {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    margin: 34px;
+    background-color: transparent;
+    padding: 19px;
+    list-style: none;
+    border-radius: var(--border-radius);
+    gap: 24px;
+}
+
+.right-menu-ul li::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.right-menu-ul li[data-icon="profile.svg"]::before {
+    background-image: url("../icons/profile.svg");
+}
+
+.right-menu-ul li[data-icon="home.svg"]::before {
+    background-image: url("../icons/home.svg");
+}
+
+.right-menu-ul li[data-icon="settings.svg"]::before {
+    background-image: url("../icons/settings.svg");
+}
+
+.right-menu-ul li[data-icon="notes.svg"]::before {
+    background-image: url("../icons/contact-round.svg");
+}
+
+.right-menu-ul li[data-icon="award.svg"]::before {
+    background-image: url("../icons/award.svg");
+}
+
+.right-menu-ul li[data-icon="publish.svg"]::before {
+    background-image: url("../icons/plus.svg");
+}
+
+.right-menu-ul li:hover {
+    background-color: var(--active-nav);
+}
+
+.right-menu.active {
+    transform: translateX(0);
+}
+
+.header-menu-icon {
+    cursor: pointer; 
+    transition: transform 0.2s; 
+}
+
+.header-menu-icon:hover {
+    transform: scale(1.1); 
+}
