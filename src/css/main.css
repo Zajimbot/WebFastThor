@@ -249,16 +249,91 @@ header{
 
 .filter-left-menu
 {
-        width: 320px;
+    display: flexbox;
+    width: 320px;
     min-width: 320px;
     height: 100%;
-    top: 126px;
+    top: 148px;
     bottom: 0;
     left: 0;
     position: fixed;
     background-color: var(--element-color);
-    /* transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;  */
+    transform: translateX(  100%);
+    transition: transform 0.3s ease-in-out; 
     z-index: 1000; 
+}
 
+.filter-left-menu div{
+    display: inline-flex;
+    background-color: var(--element-color);
+}
+
+.filter-left-menu div p{
+    color: var(--white);
+    background-color: transparent;
+    margin-top: 18px;
+}
+
+.left-menu-check{
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+}
+
+.filter-left-menu div select
+{
+    color: var(--white);
+    background-color: transparent;
+    border: transparent;
+    height: 48px;
+    margin: 6px;
+}
+
+.filter-left-menu div img{
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    margin: 6px;
+}
+
+.filter-left-menu div{
+    width: 100%;
+}
+
+.input-right0menu{
+     background-color: var(--input-background);
+     border-radius: var(--border-radius);
+     position: relative;
+     width: 70%;
+     height: 48px;
+     margin: 6px;
+     padding: 6px;
+     color: var(--white);
+}
+
+.date-input{
+    background-color: var(--input-background);
+    border-radius: var(--border-radius);
+    position: relative;
+    width: 70%;
+    height: 48px;
+    margin: 6px;
+    color: var(--white);
+    padding: 6px;
+}
+
+.ok-button{
+    background-color: var(--background);
+    color: var(--white);
+    padding: 12px;
+    width: 272px;
+    margin: 24px;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    border: 1px solid transparent; /* Прозрачная обводка по умолчанию */
+    transition: border-color 0.3s ease; 
+}
+
+.ok-button:hover {
+    border: 1px solid var(--white); /* Белая обводка при наведении */
 }

@@ -26,7 +26,7 @@
     </header>
     <!-- Фильтр -->
     <div class="filter-div"> 
-        <button>
+        <button onclick="leftMenu()">
             <img src="./src/icons/triangle.svg" alt="Иконка отсутствует">
             <p>Фильтр</p>
         </button>
@@ -140,21 +140,18 @@
         <ul class="right-menu-ul">
             <li data-icon="profile.svg" onclick="window.location.href='./profile.html';">Профиль</li>
             <li data-icon="home.svg" onclick="window.location.href='./index.html';">Домой</li>
-            <li data-icon="settings.svg">Настройки</li>
-            <li data-icon="notes.svg">Мои записи</li>
-            <li data-icon="award.svg">Мои победы</li>
-            <li data-icon="publish.svg">Разместить</li>
+            <li data-icon="publish.svg" onclick="window.location.href='./createTur.html';">Разместить</li>
         </ul>
     </nav>   
     <!-- Фильтр с лева -->
-     <!-- <div class="filter-left-menu">
+     <div class="filter-left-menu">
         <div>
             <input type="checkbox" class="left-menu-check">
             <p>Турниры с призовым фондом</p>
         </div>
         <div>
             <img src="./src/icons/mani.svg" alt="">
-            <input class="input-right0menu">
+            <input class="input-right0menu"  value placeholder="Поиск турниров">
         </div>
         <div>
             <img src="./src/icons/Location.svg" alt="">
@@ -166,9 +163,10 @@
         </div>
         <div>
             <img src="./src/icons/Data.svg" alt="">
-            <input type="text" class="date-input">
-            <input type="text" class="date-input">
+            <input type="text" class="date-input" value placeholder="От">
+            <input type="text" class="date-input" value placeholder="До" >
         </div>
-     </div> -->
+        <button class="ok-button">Применить</button>
+     </div>
 </body>
 </html>

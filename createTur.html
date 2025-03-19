@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/right-menu.css">
+    <link rel="stylesheet" href="./src/css/createTur.css">
+    <script src="./src/js/menu.js"></script>
+</head>
+<body>
+    <header>
+         
+        <div class="header-div">
+            <a href="./index.html">
+            <div>
+                    <img class="header-img" src="./src/icons/Logo.svg" alt="Иконка отсутствует">
+                    <p>FastTour платформа 
+для турниров</p>
+            </div>
+            </a>
+            <p class="header-profile">Окно создания турнира</p>
+            <img src="./src/icons/Menu.svg" alt="Иконка отсутствует" class="header-menu-icon"  onclick="toggleMenu()" >
+        </div>  
+    </header>
+
+    <main>
+    <div class="main-background-div">
+        <!-- Правый блок -->
+        <div class="main-background-div-left">
+            <img src="./src/img/img.png" alt="Вставьте фото">
+            <div class="input-button-container">
+                <!-- Левая часть с полями ввода -->
+                <div class="input-container">
+                    <div>
+                        <input type="text" placeholder="Название">
+                    </div>
+                    <div>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Адресс">
+                    </div>
+                    <div class="main-left-checkbox-text">
+                        <input type="checkbox">
+                        <input type="text" placeholder="Призовой фонд">
+                    </div>
+                </div>
+                <!-- Правая часть с кнопками -->
+                <div class="button-container">
+                    <button>Выбрать тип турнира</button>
+                    <button>Разместить турнир</button>
+                </div>
+            </div>
+        </div>
+        <!-- Левый блок -->
+        <div class="main-right">
+            <textarea name="content"></textarea>
+        </div>
+    </div>
+    </main>
+
+    <nav class="right-menu">
+        <ul class="right-menu-ul">
+            <li data-icon="profile.svg" onclick="window.location.href='./profile.html';">Профиль</li>
+            <li data-icon="home.svg" onclick="window.location.href='./index.html';">Домой</li>
+            <li data-icon="publish.svg" onclick="window.location.href='./createTur.html';">Разместить</li>
+        </ul>
+    </nav>
+<!-- Подвал  -->
+     <footer class="footer">
+        <div>
+            <p>Автор Калимуллин А.И.</p>
+            <a href="mail to:Mail@mail.ru">Mail@mail.ru</a>
+            <a href="tel:+79999999999">+7 999 999 99 99</a>
+            <a href="./index.html">Правила</a>
+            <a href="./index.html">Поддержка</a>
+        </div>
+ 
+     </footer>
+<nav class="right-menu">
+        <ul class="right-menu-ul">
+            <li data-icon="profile.svg" onclick="window.location.href='./profile.html';">Профиль</li>
+            <li data-icon="home.svg" onclick="window.location.href='./index.html';">Домой</li>
+            <li data-icon="publish.svg">Разместить</li>
+        </ul>
+    </nav> 
+</body>
+</html>

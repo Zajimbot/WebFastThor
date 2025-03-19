@@ -48,18 +48,6 @@
     background-image: url("../icons/home.svg");
 }
 
-.right-menu-ul li[data-icon="settings.svg"]::before {
-    background-image: url("../icons/settings.svg");
-}
-
-.right-menu-ul li[data-icon="notes.svg"]::before {
-    background-image: url("../icons/contact-round.svg");
-}
-
-.right-menu-ul li[data-icon="award.svg"]::before {
-    background-image: url("../icons/award.svg");
-}
-
 .right-menu-ul li[data-icon="publish.svg"]::before {
     background-image: url("../icons/plus.svg");
 }
