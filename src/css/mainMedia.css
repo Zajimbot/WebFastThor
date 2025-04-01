@@ -2,14 +2,19 @@
 
 @media (max-width: 480px){  
     .header-div a div p{
-        font-size: 16px;
+        display: none;
     }
     
     .header-div a{
         background-color: var(--element-color);
-        /* display: none; */
     }
 
+    .header-div{
+        padding: 0px;
+        gap: 24px;
+    }
+
+ 
     .header-img
     {
         width: 32px;
@@ -18,7 +23,7 @@
 
     .header-input
     {
-        margin-top: 4px;
+        margin: 12px;
         border-width: 1px;
         height: 32px;
         font-size: 14px;
@@ -31,19 +36,101 @@
     }
 
     .header-menu-icon{
-        margin-left: 24px;
+        margin-left: 2px;
         width: 24px;
     }
+
+/* Фильтр */
+    .filter-div{
+        margin-bottom: 12px;
+    }
+
+    .filter-div button{
+        margin-top: 72px;
+        margin-left: 12px;
+        height: 32px;
+        width: 120px;
+        padding: 4px;
+    }
+
+    .filter-div button p{
+        font-size: 12px;
+    }
+
+    .filter-div button img {
+        width: 12px;
+        height: 12px;
+        margin: 12px;
+    }
+    /* Карточки */
+    .grop-card-main{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 12px;
+        margin-right: 0px;
+        gap: 12px 0px;
+    }
+
+    .card-div{
+        gap: 12px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .card-div-img{
+        width: 135px;
+        margin: 12px 0px 0px 12px;
+    }
+
+    .card-div p{
+        padding-left: 12px;
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+
+    .card-div-content div img{
+        width: 24px;
+        border-radius: var(--border-radius);
+    }
+
+    .card-div-content-block p{
+        margin-top: 0px;
+    }
+
+    .card-div-content-block{
+        padding-bottom: 0px;
+    }
+
+/* Подвал */
+    .footer{
+        margin-top: 70px;
+    }
+
+    .footer div{
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
 }
 
-@media (max-width: 768px){  
+@media (max-width: 768px ) and (min-width: 481px){  
+    
+    .header-div{
+        padding: 2px;
+        gap: 24px;
+    }
+
     .header-div a div p{
-        font-size: 18px;
+        font-size: 12px;
     }
     
     .header-div a{
         background-color: var(--element-color);
-        display: none;
+    }
+
+   .header-div div{
+        gap: 12px;
     }
 
     .header-img
@@ -54,10 +141,10 @@
 
     .header-input
     {
-        margin-top: 8px;
+        margin: 12px;
         border-width: 1px;
-        height: 44px;
-        font-size: 16px;
+        height: 32px;
+        font-size: 14px;
 
         padding-left: 44px;
         background-size: 16px;
@@ -67,7 +154,84 @@
     }
 
     .header-menu-icon{
-        margin-left: 24px;
+        margin-left: 2px;
         width: 24px;
     }
-}
+
+ /* Фильтр */
+    .filter-div{
+        margin-bottom: 12px;
+    }
+
+    .filter-div button{
+        margin-top: 72px;
+        margin-left: 12px;
+        height: 32px;
+        width: 120px;
+        padding: 4px;
+    }
+
+    .filter-div button p{
+        font-size: 12px;
+    }
+
+    .filter-div button img {
+        width: 12px;
+        height: 12px;
+        margin: 12px;
+    }   
+     /* Карточки */
+    .grop-card-main{
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 12px;
+        margin-right: 0px;
+        gap: 12px 0px;
+	    grid-template-rows: 75% 0%;
+    }
+
+    .card-div{
+        gap: 12px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .card-div-img{
+        width: 135px;
+        margin: 12px 0px 0px 12px;
+    }
+
+    .card-div p{
+        padding-left: 12px;
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+
+    .card-div-content div img{
+        width: 24px;
+        border-radius: var(--border-radius);
+    }
+
+    .card-div-content-block p{
+        margin-top: 0px;
+    }
+
+    .card-div-content-block{
+        padding-bottom: 0px;
+    }
+    
+/* Подвал */
+    .footer{
+    margin-top: 270px;
+    }
+
+    .footer div{
+        /* flex-direction: column; */
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+
+} 
+

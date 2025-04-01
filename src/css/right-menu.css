@@ -14,10 +14,6 @@
     z-index: 1000; 
 }
 
-.right-menu a{
-    display: none;
-}
-
 .right-menu-ul {
     background-color: var(--element-color);
 }

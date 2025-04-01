@@ -34,7 +34,7 @@ header{
 .header-div {
     display: flex;
     justify-content: space-between;
-    lign-items: center;
+    align-items: center;
     padding: 10px;
     background-color: var(--element-color);
     gap: 86px;
@@ -109,10 +109,14 @@ header{
     position: relative; 
 }
 
-.filter-div button:hover
+@media (hover: hover)
 {
-    background-color: var(--hover-color);
+   .filter-div button:hover
+    {
+        background-color: var(--hover-color);
+    } 
 }
+
 
 .filter-div button p{
     background: transparent ;
@@ -126,20 +130,13 @@ header{
     margin-right: 24px;
 }
 
-.filter-div button div {
-    background-color: var(--element-color);
-    color:var(--white);
-    font-size: 22px;
-    text-align: center; 
-}
-
 /* карточки */
 
 .grop-card-main
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 50% 50%;
+	grid-template-rows: 50% 0%;
     margin-left: 270px;   
     margin-right: 192px;
     gap: 32px 0px;
@@ -153,16 +150,20 @@ header{
     gap: 24px;
     width: 288px;
     height: 505px;
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     
 }
 
+@media (hover: hover)
+{
 .card-div:hover
 {
     border: var(--white) solid;
     border-width: 1px;
     margin: -1px;
 }
+}
+
 
 .card-div-img{
 
@@ -206,6 +207,7 @@ header{
 .card-div-content-block p{
     width: 150px;
     margin-top: 24px;
+    background-color: transparent;
 }
 
 .card-div-content-block
@@ -327,10 +329,10 @@ header{
     margin: 24px;
     border-radius: var(--border-radius);
     font-size: 16px;
-    border: 1px solid transparent; /* Прозрачная обводка по умолчанию */
+    border: 1px solid transparent; 
     transition: border-color 0.3s ease; 
 }
 
 .ok-button:hover {
-    border: 1px solid var(--white); /* Белая обводка при наведении */
+    border: 1px solid var(--white); 
 }
