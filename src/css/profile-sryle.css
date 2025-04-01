@@ -2,6 +2,7 @@
 
 
 *{
+    font-family: 'Ledger';
     padding: 0px;
     margin: 0px;
     border: none;
@@ -127,7 +128,7 @@ main{
     flex-direction: column;
     margin-top: 24px;
     color: var(--white);
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 84px;
     background-color: transparent;
 }
@@ -158,7 +159,7 @@ main{
     color: var(--white);
     background-color: transparent;
     margin-left: 24px;
-    font-size: 20px;
+    font-size: 18px;
     text-overflow: ellipsis;
     display: block;
     white-space: nowrap;
@@ -216,7 +217,7 @@ main{
     color: var(--white);
     padding-left: 24px;
     padding-bottom: 24px;
-    font-size: 20px;
+    font-size: 16px;
     background-color:  var(--card-black-color);
 }
 
@@ -253,6 +254,7 @@ main{
 {
     background-color: var(--card-black-color);
     border-radius: var(--border-radius);
+    margin-top: 1px;
 }
 
 /* подвал */

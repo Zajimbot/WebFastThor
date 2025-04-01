@@ -2,6 +2,7 @@
 
 
 *{
+    font-family: 'Ledger';
     padding: 0px;
     margin: 0px;
     border: none;
@@ -62,7 +63,7 @@ header{
     white-space: pre;
     background: transparent ; 
     color: var(--white);
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .header-menu-icon {
@@ -123,7 +124,7 @@ h1{
 
 .card-div-content-block p {
     margin: 0; 
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .main-img{
@@ -149,7 +150,7 @@ h1{
 }
 
 .main-info{
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 24px;
     width: 300px;
 }

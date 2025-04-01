@@ -1,0 +1,73 @@
+@import url('./var.css');
+
+@media (max-width: 480px){  
+    .header-div a div p{
+        font-size: 16px;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        /* display: none; */
+    }
+
+    .header-img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-input
+    {
+        margin-top: 4px;
+        border-width: 1px;
+        height: 32px;
+        font-size: 14px;
+
+        padding-left: 44px;
+        background-size: 16px;
+
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .header-menu-icon{
+        margin-left: 24px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 768px){  
+    .header-div a div p{
+        font-size: 18px;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        display: none;
+    }
+
+    .header-img
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header-input
+    {
+        margin-top: 8px;
+        border-width: 1px;
+        height: 44px;
+        font-size: 16px;
+
+        padding-left: 44px;
+        background-size: 16px;
+
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .header-menu-icon{
+        margin-left: 24px;
+        width: 24px;
+    }
+}
