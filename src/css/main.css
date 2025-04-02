@@ -136,10 +136,9 @@ header{
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 50% 0%;
     margin-left: 270px;   
     margin-right: 192px;
-    gap: 32px 0px;
+    gap: 32px;
 }
 
 .card-div
