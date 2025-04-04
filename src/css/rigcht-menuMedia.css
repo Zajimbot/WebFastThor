@@ -1,0 +1,39 @@
+
+@import url('./var.css');
+
+@media (max-width: 480px){  
+
+    .right-menu {
+        min-width: 185px;
+        top: 56px;
+    }
+
+    .right-menu-ul li{
+        font-size: 12px;
+        margin: 16px;
+    }
+
+    .right-menu-ul li::before {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 768px ) and (min-width: 481px){  
+
+    .right-menu {
+        min-width: 200px;
+        top: 60px;
+    }
+
+    .right-menu-ul li{
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .right-menu-ul li::before {
+        width: 24px;
+        height: 24px;
+    }
+}
+
