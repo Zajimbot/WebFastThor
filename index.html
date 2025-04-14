@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/css/mainMedia.css">
     <link rel="stylesheet" href="./src/css/rigcht-menuMedia.css">
     <script src="./src/js/menu.js"></script>
+    <script src="./src/js/filter.js"></script>
 </head>
 <body >
     <header class="">
@@ -28,7 +29,7 @@
     </header>
     <!-- Фильтр -->
     <div class="filter-div"> 
-        <button onclick="leftMenu()">
+        <button  id="open-filter-button">
             <img src="./src/icons/triangle.svg" alt="Иконка отсутствует">
             <p>Фильтр</p>
         </button>
@@ -169,7 +170,7 @@
             <input type="text" class="date-input" value placeholder="От">
             <input type="text" class="date-input" value placeholder="До" >
         </div>
-        <button class="ok-button">Применить</button>
+        <button class="ok-button"  id="close-filter-button">Применить</button>
      </div>
 </body>
 </html>

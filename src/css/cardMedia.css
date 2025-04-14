@@ -1,0 +1,192 @@
+@import url('./var.css');
+
+@media (max-width: 480px){  
+ .header-div a div p{
+        display: none;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .header-div{
+        padding: 0px;
+        gap: 24px;
+    }
+
+    .header-div p{
+        font-size: 16px;
+    }
+
+    .header-img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-menu-icon{
+        margin-left: 2px;
+        width: 24px;
+    }
+    
+    /* main */
+    .main-card-div{
+        width: 90%;
+        margin-top: 72px;
+        margin-left: 12px;
+        margin-right: 12px;
+        flex-direction: column;
+    }
+
+    .main-card-div-text
+    {
+        margin: 12px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    .main-card-div-text img{
+        width: 24px;
+        margin: 12px;;
+    }
+
+    .main-img{
+        width: 95%;
+        height: inherit;
+        margin: 12px;
+    }
+
+    .card-div-content-block
+    {
+        padding: 4px;
+    }
+
+    .card-div-content-block p{
+        font-size: 12px;
+    }
+
+    .main-info{
+        font-size: 12px;
+    }
+
+    .button-card{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* Подвал */
+    .footer{
+        margin-top: 70px;
+    }
+
+    .footer div{
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px ) and (min-width: 481px){  
+    
+    .header-div{
+        padding: 2px;
+        gap: 24px;
+    }
+
+    .header-div a div p{
+        font-size: 12px;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        margin: 12px;
+    }
+
+   .header-div div{
+        gap: 12px;
+    }
+
+    .header-img
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header-div p {
+        font-size: 20px;
+    }
+
+    .header-menu-icon{
+        margin-left: 2px;
+        width: 24px;
+    }
+
+
+    /* main */
+    .main-card-div{
+        width: 90%;
+        margin-top: 88px;
+        margin-left: 16px;
+        margin-right: 16px;
+        flex-direction: column;
+    }
+
+    .main-card-div-text
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .main-card-div-text img{
+        width: 32px;
+        margin: 16px;;
+    }
+
+    .main-img{
+        width: 95%;
+        height: inherit;
+        margin: 16px;
+    }
+
+    .card-div-content-block
+    {
+        padding: 4px;
+    }
+
+    .card-div-content-block p{
+        font-size: 16px;
+    }
+
+    .main-info{
+        font-size: 16px;
+    }
+
+    .button-card{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    /* Подвал */
+    .footer{
+    margin-top: 54px;
+    }
+
+    .footer div{
+        /* flex-direction: column; */
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }
+}
