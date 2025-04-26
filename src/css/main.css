@@ -47,10 +47,13 @@ header{
     gap: 24px;
 }
 
+@media (hover: hover)
+{
 .header-div div:hover
 {
     background-color: var(--hover-color);
     border-radius: var(--border-radius);
+}
 }
 
 .header-div div p {
@@ -64,8 +67,11 @@ header{
     border-radius: var(--border-radius);
 }
 
+@media (hover: hover)
+{
 .header-menu-icon:hover{
     background-color: var(--hover-color);
+}
 }
 
 .header-input {
@@ -332,6 +338,9 @@ header{
     transition: border-color 0.3s ease; 
 }
 
+@media (hover: hover)
+{
 .ok-button:hover {
     border: 1px solid var(--white); 
+}
 }
