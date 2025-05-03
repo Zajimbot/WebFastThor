@@ -1,0 +1,169 @@
+@import url('./var.css');
+
+/* 480 если мобила */
+@media (max-width: 780px){
+   
+ .header-div a div p{
+        display: none;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .header-div{
+        padding: 0px;
+        gap: 24px;
+    }
+
+    .header-div p{
+        font-size: 16px;
+    }
+
+    .header-img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-menu-icon{
+        margin-left: 2px;
+        width: 24px;
+    }
+
+    main{
+        flex-direction: column;
+        margin-top: 52px;
+    }
+
+    .user-card{
+        margin: 12px 0px 0px 12px;
+        width: 90%;
+        height: 100%;
+        padding-bottom: 44px;
+    }
+
+    .ava{
+        width: 70%;
+        height: 70%;
+    }
+
+    .user-card-content p{
+        margin-top: 6px;
+    }
+    
+    .nav-prodile{
+        flex-direction: column;
+    }
+
+    .nav-button{
+        width: 90%;
+        height: auto;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+
+    .nav-button p{
+        font-size: 12px;
+    }
+
+    .nav-button img{
+        width: 24px;
+        height: 24px;
+        margin: 6px;
+    }
+
+    .main-item-card{
+        margin-left: 12px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-div{
+        width: 90%;
+        height: auto;
+        margin-top: 12px;
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+
+    .card-div-img{
+        width: 90%;
+        height: auto;
+    }
+
+    .card-div p{
+        font-size: 12px;
+    }
+
+    .card-div-content-block p{
+        margin: 0px;
+    }
+
+    .card-div-content div img{
+        width: 24px;
+        height: 24px;
+    }
+    /* Подвал */
+    .footer{
+        margin-top: 70px;
+    }
+
+    .footer div{
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+
+
+/* @media (max-width: 768px ) and (min-width: 481px){  
+ 
+ .header-div{
+        padding: 2px;
+        gap: 24px;
+    }
+
+    .header-div a div p{
+        font-size: 12px;
+    }
+    
+    .header-div a{
+        background-color: var(--element-color);
+        margin: 12px;
+    }
+
+   .header-div div{
+        gap: 12px;
+    }
+
+    .header-img
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header-div p {
+        font-size: 20px;
+    }
+
+    .header-menu-icon{
+        margin-left: 2px;
+        width: 24px;
+    }
+
+    
+ /* Подвал 
+    .footer{
+    margin-top: 54px;
+    }
+
+    .footer div{
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
+        font-size: 12px;
+    }   
+} */

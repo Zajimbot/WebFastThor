@@ -1,4 +1,3 @@
-// filterMenu.js
 function initFilterMenu() {
     const filterMenu = document.querySelector('.filter-left-menu');
     const openButton = document.getElementById('open-filter-button');
@@ -20,7 +19,6 @@ function initFilterMenu() {
         closeButton.addEventListener('click', closeFilterMenu);
     }
 
-    // Закрытие при клике вне меню
     document.addEventListener('click', function(event) {
         if (filterMenu && 
             !filterMenu.contains(event.target) && 

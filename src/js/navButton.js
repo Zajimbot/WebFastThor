@@ -1,4 +1,3 @@
-// nav-buttons.js
 function setupNavButtons() {
     const navButtons = document.querySelectorAll('.nav-button');
     

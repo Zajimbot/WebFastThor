@@ -112,9 +112,10 @@ main{
     justify-self: center;
     width: 312px;
     height: 312px;
-    margin-top: 72px;
+    margin-top: 52px;
+    margin-left: 52px;
     /* border: 1px var(--white) solid;
-    border-radius: var(--border-radius); */
+    border-radius: var(--border-radius); */ 
 }
 
 .user-card-content
@@ -180,7 +181,6 @@ main{
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 50% 50%;
 }
 
 .main-item-card :nth-child(3n+3)
