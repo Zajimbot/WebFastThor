@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  nginx:
+    image: my-nginx-app  # Добавим имя образа для ясности
+    ports:
+      - "80:80"
+    build:
+      context: .         # Важно: контекст сборки - текущая директория
+      dockerfile: Dockerfile
+    volumes:
+      # Только для разработки - можно закомментировать для productio
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped

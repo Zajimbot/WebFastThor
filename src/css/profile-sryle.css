@@ -1,7 +1,6 @@
 @import url('./var.css');
 
-
-*{
+* {
     font-family: 'Ledger';
     padding: 0px;
     margin: 0px;
@@ -9,7 +8,7 @@
     background-color: var(--background);
 }
 
-header{
+header {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -17,13 +16,13 @@ header{
     z-index: 1000;
 }
 
-.header-div a{
+.header-div a {
     text-decoration: none;
     border-radius: var(--border-radius);
 }
 
 .header-img {
-    background: transparent ;
+    background: transparent;
 }
 
 .header-Magnidier-logo {
@@ -47,15 +46,16 @@ header{
     gap: 24px;
 }
 
-.header-div div:hover
-{
-    background-color: var(--hover-color);
-    border-radius: var(--border-radius);
+@media (hover: hover) {
+    .header-div div:hover {
+        background-color: var(--hover-color);
+        border-radius: var(--border-radius);
+    }
 }
 
 .header-div div p {
     white-space: pre;
-    background: transparent ; 
+    background: transparent;
     color: var(--white);
     font-size: 24px;
 }
@@ -66,20 +66,22 @@ header{
     border-radius: var(--border-radius);
 }
 
-.header-menu-icon:hover{
-    background-color: var(--hover-color);
+@media (hover: hover) {
+    .header-menu-icon:hover {
+        background-color: var(--hover-color);
+    }
 }
 
-.header-profile{
+.header-profile {
     letter-spacing: 8px;
-    font-size: 48px; 
+    font-size: 48px;
     color: var(--white);
     background-color: var(--element-color);
 }
 
 /* Карточка пользователя */
 
-main{
+main {
     display: inline-flex;
     margin-top: 144px;
 }
@@ -91,7 +93,7 @@ main{
     border-radius: var(--border-radius);
     margin: 24px 48px 0px 24px;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .user-card::before {
@@ -101,12 +103,12 @@ main{
     left: 36px;
     right: 36px;
     bottom: 36px;
-    border: 1px solid var(--white); 
-    border-radius: var(--border-radius) ; 
-    pointer-events: none; 
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    pointer-events: none;
 }
 
-.ava{
+.ava {
     background-color: transparent;
     display: flex;
     justify-self: center;
@@ -114,17 +116,13 @@ main{
     height: 312px;
     margin-top: 52px;
     margin-left: 52px;
-    /* border: 1px var(--white) solid;
-    border-radius: var(--border-radius); */ 
 }
 
-.user-card-content
-{
+.user-card-content {
     background-color: transparent;
 }
 
-.user-card-content p
-{
+.user-card-content p {
     display: flex;
     flex-direction: column;
     margin-top: 24px;
@@ -141,17 +139,15 @@ main{
     width: 264px;
     height: 72px;
     display: inline-flex;
-    align-items: center; 
+    align-items: center;
     border-radius: var(--border-radius);
-    border: 1px solid transparent; 
-    transition: background-color 0.3s, border-color 0.3s,
-     width 0.7s; 
-    
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, width 0.7s;
 }
 
 .nav-button-active {
     background-color: var(--active-nav);
-    border: 1px solid var(--white); 
+    border: 1px solid var(--white);
     width: 33%;
     transition: width 0.7s;
 }
@@ -171,25 +167,29 @@ main{
 .nav-button img {
     background-color: transparent;
     margin-left: 8px;
-    width: 64px; 
+    width: 64px;
     height: 64px;
 }
-/* 
-Карточка */
 
-.main-item-card
-{
+@media (hover: hover) {
+    .nav-button:hover {
+        background-color: var(--element-hover-color);
+        border: 1px solid white;
+    }
+}
+
+/* Карточка */
+
+.main-item-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.main-item-card :nth-child(3n+3)
-{
+.main-item-card :nth-child(3n+3) {
     margin-right: 0px;
 }
 
-.card-div
-{
+.card-div {
     background-color: var(--element-color);
     width: 408px;
     height: 496px;
@@ -199,59 +199,54 @@ main{
     border-radius: var(--border-radius);
 }
 
-.card-div:hover
-{
-    border: 1px var(--white) solid;
-    
+@media (hover: hover) {
+    .card-div:hover {
+        border: 1px var(--white) solid;
+    }
 }
 
-.card-div-img{
-
+.card-div-img {
     width: 372px;
     height: 144px;
-    margin: 24px 18px 24px 18px ;
+    margin: 24px 18px 24px 18px;
 }
 
-.card-div p
-{
+.card-div p {
     color: var(--white);
     padding-left: 24px;
     padding-bottom: 24px;
     font-size: 16px;
-    background-color:  var(--card-black-color);
+    background-color: var(--card-black-color);
 }
 
-.card-name-p{
+.card-name-p {
     margin-left: -24px;
 }
 
-.card-div-content
-{
+.card-div-content {
     background-color: var(--card-black-color);
     border-radius: var(--border-radius);
     padding-top: 17px;
     padding-left: 24px;
-
 }
 
-.card-div-content div{
-    display: flex; 
-    align-items: center; 
+.card-div-content div {
+    display: flex;
+    align-items: center;
 }
 
-.card-div-content div img{
+.card-div-content div img {
     background-color: var(--card-black-color);
     width: 48px;
     height: 48px;
 }
 
-.card-div-content-block p{
+.card-div-content-block p {
     width: 245px;
     margin-top: 24px;
 }
 
-.card-div-content-block
-{
+.card-div-content-block {
     background-color: var(--card-black-color);
     border-radius: var(--border-radius);
     margin-top: 1px;
@@ -259,14 +254,11 @@ main{
 
 /* подвал */
 
-.footer
-{
+.footer {
     margin-top: 136px;
 }
 
-
-.footer div
-{
+.footer div {
     display: flex;
     gap: 128px;
     padding: 24px;
@@ -274,13 +266,12 @@ main{
     color: var(--white);
 }
 
-.footer div a{
+.footer div a {
     background: transparent;
     text-decoration: none;
     color: var(--white);
 }
 
-.footer div p{
+.footer div p {
     background: transparent;
 }
-

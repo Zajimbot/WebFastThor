@@ -1,6 +1,6 @@
 @import url('./var.css');
 
-*{
+* {
     font-family: 'Ledger';
     padding: 0px;
     margin: 0px;
@@ -8,12 +8,11 @@
     background-color: var(--background);
 }
 
-body
-{
+body {
     display: block;
 }
 
-header{
+header {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -22,13 +21,13 @@ header{
     margin-top: 0px;
 }
 
-.header-div a{
+.header-div a {
     text-decoration: none;
     border-radius: var(--border-radius);
 }
 
 .header-img {
-    background: transparent ;
+    background: transparent;
 }
 
 .header-Magnidier-logo {
@@ -52,15 +51,16 @@ header{
     gap: 24px;
 }
 
-.header-div div:hover
-{
-    background-color: var(--hover-color);
-    border-radius: var(--border-radius);
+@media (hover: hover) {
+    .header-div div:hover {
+        background-color: var(--hover-color);
+        border-radius: var(--border-radius);
+    }
 }
 
 .header-div div p {
     white-space: pre;
-    background: transparent ; 
+    background: transparent;
     color: var(--white);
     font-size: 24px;
 }
@@ -71,13 +71,15 @@ header{
     border-radius: var(--border-radius);
 }
 
-.header-menu-icon:hover{
-    background-color: var(--hover-color);
+@media (hover: hover) {
+    .header-menu-icon:hover {
+        background-color: var(--hover-color);
+    }
 }
 
-.header-profile{
+.header-profile {
     letter-spacing: 8px;
-    font-size: 48px; 
+    font-size: 48px;
     color: var(--white);
     background-color: var(--element-color);
 }
@@ -106,17 +108,17 @@ main {
 .input-button-container {
     background-color: transparent;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
 
 .input-container {
-    width: 60%; 
+    width: 60%;
     background-color: transparent;
 }
 
-.input-container div{
+.input-container div {
     background-color: transparent;
 }
 
@@ -146,8 +148,8 @@ input[type="date"] {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1); 
-    transform: scale(1.5); 
+    filter: invert(1);
+    transform: scale(1.5);
     cursor: pointer;
     margin-right: 8px;
 }
@@ -167,19 +169,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .main-left-checkbox-text {
-    display: flex; 
+    display: flex;
     align-items: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .main-left-checkbox-text input[type="checkbox"] {
-    margin-left: 24px; 
+    margin-left: 24px;
     width: 48px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .main-left-checkbox-text input[type="text"] {
-    flex-grow: 1; 
+    flex-grow: 1;
     width: 100%;
     margin-right: -72px;
 }
@@ -188,35 +190,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     margin: 24px;
-    width: 27%; 
+    width: 27%;
     background-color: transparent;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .button-container button {
     background-color: var(--element-color);
     color: var(--white);
     width: 100%;
-    height: 120px; 
+    height: 120px;
     margin-bottom: 24px;
-    border-radius: var(--border-radius); 
-    border: none; 
-    font-size: 16px; 
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 16px;
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.button-container button:hover {
-    background-color: var(--element-hover-color);
-    border: 1px solid white;
+@media (hover: hover) {
+    .button-container button:hover {
+        background-color: var(--element-hover-color);
+        border: 1px solid white;
+    }
 }
 
-.main-right{
+.main-right {
     background-color: var(--user-card-back);
     border-radius: var(--border-radius);
     padding: 24px;
 }
 
-.main-right textarea{
+.main-right textarea {
     border-radius: var(--border-radius);
     color: var(--white);
     height: 856px;
@@ -227,14 +231,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* Подвал */
-.footer
-{
+.footer {
     margin-top: 136px;
 }
 
-
-.footer div
-{
+.footer div {
     display: flex;
     gap: 128px;
     padding: 24px;
@@ -242,12 +243,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--white);
 }
 
-.footer div a{
+.footer div a {
     background: transparent;
     text-decoration: none;
     color: var(--white);
 }
 
-.footer div p{
+.footer div p {
     background: transparent;
 }

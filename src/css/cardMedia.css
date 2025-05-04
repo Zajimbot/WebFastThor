@@ -1,7 +1,7 @@
 @import url('./var.css');
 
 @media (max-width: 480px){  
- .header-div a div p{
+    .header-div a div p{
         display: none;
     }
     

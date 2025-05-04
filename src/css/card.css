@@ -1,7 +1,6 @@
 @import url('./var.css');
 
-
-*{
+* {
     font-family: 'Ledger';
     padding: 0px;
     margin: 0px;
@@ -9,12 +8,11 @@
     background-color: var(--background);
 }
 
-body
-{
+body {
     display: block;
 }
 
-header{
+header {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -23,13 +21,13 @@ header{
     margin-top: 0px;
 }
 
-.header-div a{
+.header-div a {
     text-decoration: none;
     border-radius: var(--border-radius);
 }
 
 .header-img {
-    background: transparent ;
+    background: transparent;
 }
 
 .header-Magnidier-logo {
@@ -53,15 +51,9 @@ header{
     gap: 24px;
 }
 
-.header-div div:hover
-{
-    background-color: var(--hover-color);
-    border-radius: var(--border-radius);
-}
-
 .header-div div p {
     white-space: pre;
-    background: transparent ; 
+    background: transparent;
     color: var(--white);
     font-size: 22px;
 }
@@ -72,21 +64,17 @@ header{
     border-radius: var(--border-radius);
 }
 
-.header-menu-icon:hover{
-    background-color: var(--hover-color);
-}
-
-.header-profile{
+.header-profile {
     letter-spacing: 8px;
-    font-size: 48px; 
+    font-size: 48px;
     color: var(--white);
     background-color: var(--element-color);
 }
 
 /* main */
 
-.main-card-div{
-    display: inline flex;
+.main-card-div {
+    display: inline-flex;
     margin-top: 174px;
     justify-content: center;
     margin-left: 124px;
@@ -95,12 +83,12 @@ header{
     border-radius: var(--border-radius);
 }
 
-p{
+p {
     color: var(--white);
     background-color: transparent;
 }
 
-h1{
+h1 {
     color: var(--white);
     font-size: 36px;
     font-weight: normal;
@@ -108,13 +96,12 @@ h1{
     margin-bottom: 12px;
 }
 
-.card-div-content-block p{
+.card-div-content-block p {
     width: 224px;
     margin-top: 24px;
 }
 
-.card-div-content-block
-{
+.card-div-content-block {
     border-radius: var(--border-radius);
     background-color: var(--user-card-back);
     display: flex;
@@ -123,11 +110,11 @@ h1{
 }
 
 .card-div-content-block p {
-    margin: 0; 
+    margin: 0;
     font-size: 18px;
 }
 
-.main-img{
+.main-img {
     width: 1176px;
     height: 730px;
     margin-top: 48px;
@@ -136,20 +123,18 @@ h1{
     border-radius: var(--border-radius);
 }
 
-.main-card-div-text{
-
-   background-color: var(--user-card-back);
+.main-card-div-text {
+    background-color: var(--user-card-back);
     border-radius: var(--border-radius);
-    margin: 48px 24px 48px; 
+    margin: 48px 24px 48px;
 }
 
-.main-card-div-text img
-{
+.main-card-div-text img {
     background-color: transparent;
     margin-right: 24px;
 }
 
-.main-info{
+.main-info {
     font-size: 18px;
     margin-top: 24px;
     width: 300px;
@@ -162,24 +147,17 @@ h1{
     margin-top: 24px;
     border-radius: var(--border-radius);
     font-size: 20px;
-    border: 1px solid transparent; /* Прозрачная обводка по умолчанию */
-    transition: border-color 0.3s ease; /* Плавный переход для обводки */
-}
-
-.button-card:hover {
-    border: 1px solid var(--white); /* Белая обводка при наведении */
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 /* подвал */
 
-.footer
-{
+.footer {
     margin-top: 136px;
 }
 
-
-.footer div
-{
+.footer div {
     display: flex;
     gap: 128px;
     padding: 24px;
@@ -187,12 +165,28 @@ h1{
     color: var(--white);
 }
 
-.footer div a{
+.footer div a {
     background: transparent;
     text-decoration: none;
     color: var(--white);
 }
 
-.footer div p{
+.footer div p {
     background: transparent;
+}
+
+/* Медиа-запросы для ховер-эффектов */
+@media (hover: hover) {
+    .header-div div:hover {
+        background-color: var(--hover-color);
+        border-radius: var(--border-radius);
+    }
+
+    .header-menu-icon:hover {
+        background-color: var(--hover-color);
+    }
+
+    .button-card:hover {
+        border: 1px solid var(--white);
+    }
 }

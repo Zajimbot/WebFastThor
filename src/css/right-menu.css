@@ -52,8 +52,10 @@
     background-image: url("../icons/plus.svg");
 }
 
+@media (hover: hover) {
 .right-menu-ul li:hover {
     background-color: var(--active-nav);
+}
 }
 
 .right-menu.active {
@@ -65,6 +67,8 @@
     transition: transform 0.2s; 
 }
 
+@media (hover: hover) {
 .header-menu-icon:hover {
     transform: scale(1.1); 
+}
 }
